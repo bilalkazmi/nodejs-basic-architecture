@@ -1,7 +1,7 @@
 const redis = require("redis");
 const { RedisClient } = require("redis");
 
-const redisPort = 6379
+const redisPort = process.env.REDIS_PORT || 6379;
 
 /**
  * @function initiateRedisClient
