@@ -23,3 +23,6 @@ with different users being subscribed
 ## Redis 
 Redis is also utilized for caching requests and temporarily storing some socket related data
 `./redis/index.js`
+
+## Scripts 
+There is a folder `./scripts` that includes some helper scripts to easily implement some features like new endpoints, etc.
