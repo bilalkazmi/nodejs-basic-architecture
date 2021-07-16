@@ -11,8 +11,7 @@ const client = initiateRedisClient();
 
 const app = express();
 const server = http.createServer(app);
-const hostname = 'localhost';
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 app.use((req, res) => {
@@ -30,8 +29,8 @@ socketServer.listen(server);
 
 
 
-server.listen(port, hostname, () => {
-  logger.debuggerLocal(`Server running at http://${hostname}:${port}`);
+server.listen(port, () => {
+  logger.debuggerLocal(`Server running at PORT:${port}`);
 });
 
 server.once('close', () => {
