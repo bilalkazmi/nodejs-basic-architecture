@@ -1,0 +1,18 @@
+doctype html
+html
+  body
+    h1 Testing socket.io
+    h3#status not connected 
+    br  
+    p#update update:&nbsp
+
+    script(src="/socket.io/socket.io.js")
+    script.
+      var socket = io();
+      socket.on('connect', function() {
+        document.getElementById("status").innerHTML = "connected";   
+        socket.emit('message', 'Hello!');
+      });
+      socket.on('update', function (data) {
+          document.getElementById("update").innerHTML += data;  
+      });

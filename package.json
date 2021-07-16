@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-basic-architecture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "addRoute": "npx run-func addRouteScript.js ./scripts/addRoute",
+    "doctor-analysis": "clinic doctor --on-port=’autocannon -c100 'http://localhost:3000/adhantimings?city=Dubai&country=United%20Arab%20Emirates&method=8' -- node index.js"
+  },
+  "author": "Bilal Kazmi",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.2",
+    "passport-jwt": "^4.0.0",
+    "redis": "^3.1.2",
+    "socket.io": "^4.1.3"
+  }
+}

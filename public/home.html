@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Socket IO</title>
+</head>
+<body>
+    <h1>Testing Socket.io</h1> 
+    <h3 style="color: red;" id="status">Not Connected</h3> 
+    </br>
+</body>
+<script src="/socket.io/socket.io.js">
+</script>
+<script>
+    var socket = io();
+        socket.on('connect', function() {
+            document.getElementById("status").innerHTML = "Connected";  
+            document.getElementById("status").style = "color: lightgreen;";
+        })
+</script>
+</html>
