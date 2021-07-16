@@ -5,7 +5,7 @@ that follows functional programming paradigm
 
 ## Routing 
 Routes are defined in routes.json and every route have a related controller. 
-There is a script addRoute `pathname` `controllerName` `method` that
+There is a script "npm run addRoute `pathname` `controllerName` `method`" that
 appends the routes.json file with a new route including `pathname`, `method` and `controllerName`
 You must create a controller function with the same name that is provided here and 
 import and export the same function from https://github.com/bilalkazmi/nodejs-basic-architecture/blob/master/controllers/index.js<br/>
