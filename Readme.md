@@ -12,7 +12,7 @@ import and export the same function from https://github.com/bilalkazmi/nodejs-ba
 Example Controller : https://github.com/bilalkazmi/nodejs-basic-architecture/blob/master/controllers/test/test.js
 
 ## Handling Different Routes
-There is a function handleRoutes inside https://github.com/bilalkazmi/nodejs-basic-architecture/blob/master/handle-routes.js that takes Request and Response
+There is a function `handleRoutes` inside https://github.com/bilalkazmi/nodejs-basic-architecture/blob/master/handle-routes.js that takes Request and Response
 parameters, checks routes inside https://github.com/bilalkazmi/nodejs-basic-architecture/blob/master/routes.json and calls the appropriate controller
 
 ## Socket IO
